@@ -27,12 +27,13 @@ jobs:
           distribution: temurin
           java-version: '21'
 
-      - uses: android-actions/setup-android@v3
-
-      - name: Install SDK packages
+      - name: Accept Android SDK licenses
+        # runner 已预装 Android SDK（ANDROID_HOME），这里只补接受许可，
+        # 缺失的 platform / build-tools 由 AGP 自动下载。
         run: |
-          sdkmanager --install "platforms;android-36" "build-tools;36.0.0" > /dev/null
-          yes | sdkmanager --licenses > /dev/null
+          SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          [ -x "$SDKMANAGER" ] || SDKMANAGER=$(command -v sdkmanager)
+          yes | "$SDKMANAGER" --licenses > /dev/null || true
 
       - uses: gradle/actions/setup-gradle@v4
 
