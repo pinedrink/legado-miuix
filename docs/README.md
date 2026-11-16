@@ -8,6 +8,7 @@
 | --- | --- |
 | [README.md](../README.md) | 项目简介、目标、许可与上游署名 |
 | [BUILDING.md](BUILDING.md) | 从零构建、签名、常见构建错误 |
+| [RELEASING.md](RELEASING.md) | 发版流程、keystore 与 GitHub Secrets |
 | [api.md](api.md) | Web 服务 / API 说明 |
 | [../CHANGELOG.md](../CHANGELOG.md) | 变更记录 |
 

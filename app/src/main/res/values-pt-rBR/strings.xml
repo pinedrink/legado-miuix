@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--App-->
-    <string name="app_name">Legado</string>
-    <string name="app_name_a">Legado·A</string>
+    <string name="app_name">Legado Miuix</string>
+    <string name="app_name_a">Legado Miuix·A</string>
     <string name="receiving_shared_label">Legado·pesquisa</string>
     <string name="receiving_shared_import_label">Legado·importar</string>
     <string name="tip_perm_request_storage">Legado precisa de acesso ao armazenamento para encontrar e ler livros. Por favor, vá às "Configurações do App" para conceder "Permissão de armazenamento".</string>
@@ -102,7 +102,7 @@
         \u3000\u3000 Este é um App de leitura de software livre, desenvolvido em Kotlin, você é bem-vindo a participar em projeto.
     </string>
     <string name="app_share_description">
-        Legado (YueDu 3.0) link de download：\n https://github.com/LegadoTeam/legado/releases
+        Legado (YueDu 3.0) link de download：\n https://github.com/pinedrink/legado-miuix/releases
     </string>
     <string name="version_name">Versão %s</string>
     <string name="pt_background_verification">Verificação em segundo plano</string>

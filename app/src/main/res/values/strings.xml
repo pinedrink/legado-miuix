@@ -8,8 +8,8 @@
     <string name="paragraph_image">Image %1$d</string>
     <string name="paragraph_read_menu">Reading menu</string>
     <!--App-->
-    <string name="app_name">Legado</string>
-    <string name="app_name_a">Legado·A</string>
+    <string name="app_name">Legado Miuix</string>
+    <string name="app_name_a">Legado Miuix·A</string>
     <string name="app_name_s" translatable="false">LegadoPlus</string>
     <string name="receiving_shared_label">Legado·search</string>
     <string name="receiving_shared_import_label">Legado·import</string>
@@ -119,7 +119,7 @@
         \u3000\u3000 This is an open source reading software newly developed by Kotlin, welcome to join us.
     </string>
     <string name="app_share_description">
-        Legado (YueDu 3.0) download link：\n https://github.com/LegadoTeam/legado/releases
+        Legado (YueDu 3.0) download link：\n https://github.com/pinedrink/legado-miuix/releases
     </string>
     <string name="version_name">Version %s</string>
     <string name="pt_background_verification">Background-verification</string>
