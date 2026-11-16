@@ -36,3 +36,6 @@ captures/
 # OS
 .DS_Store
 Thumbs.db
+
+# 本地回滚包 / 备份（不入库）
+backups/

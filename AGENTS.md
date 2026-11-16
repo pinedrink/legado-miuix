@@ -4,7 +4,7 @@
 >
 > 适用对象：Codex、Claude Code、Cursor、GitHub Copilot 等能够读取仓库指令文件的编程助手。
 >
-> 更新时间：2026-11-15（验证策略改为「分级 + 批量 + 抽样」，见 §9 / §10）  
+> 更新时间：2026-11-16（验证策略见 §9 / §10；本项目文档目录见 docs/，构建见 docs/BUILDING.md）  
 > 目标仓库：[LegadoTeam/legado](https://github.com/LegadoTeam/legado)  
 > 目标 UI 库：[compose-miuix-ui/miuix](https://github.com/compose-miuix-ui/miuix)
 
