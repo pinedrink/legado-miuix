@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  封面设置页：内容区由 Compose 渲染（ui/config/cover）。
+  标题栏、返回与搜索仍由 ConfigActivity 负责，所以这里只放一个 ComposeView。
+-->
+<androidx.compose.ui.platform.ComposeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/compose_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />

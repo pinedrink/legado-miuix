@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    Miuix 风格下拉菜单背景：16dp 圆角 + 卡片/顶栏同色 surface，无描边、无阴影。
+    亮色 #FFFFFF、暗色 #303030（见 values/values-night 的 miuix_item_surface）。
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/miuix_item_surface" />
+    <corners android:radius="10dp" />
+</shape>

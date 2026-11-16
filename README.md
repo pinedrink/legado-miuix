@@ -6,9 +6,12 @@ Maintained by [pinedrink](https://github.com/pinedrink). This project is not aff
 
 ## Status
 
-This repository is being initialized. At the time of this README's initial publication, the upstream application source has not yet been imported, and no application build is provided here.
+The upstream Legado source has been imported into this repository (first import commit: 2026-11-16) and the project builds:
+`./gradlew :app:assembleDebug` produces an installable APK. See [docs/BUILDING.md](docs/BUILDING.md) for requirements and commands.
 
-The Compose and miuix migration is a project goal, not a claim of completed functionality. Future commits and release notes will document actual progress.
+The Compose / miuix migration is **in progress**, not complete. What has actually changed so far — per batch, with verification notes — is recorded in
+[docs/ai/miuix-migration-log.md](docs/ai/miuix-migration-log.md). UI work is incremental: the reading engine, book-source rules, database, and backup/sync
+behaviour are intentionally left untouched.
 
 ## Goals
 

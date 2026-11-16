@@ -1,0 +1,41 @@
+# Gradle
+.gradle/
+build/
+**/build/
+gradle-app.setting
+.gradletasknamecache
+
+# Local configuration (machine-specific, must NOT be committed)
+local.properties
+*.jks
+*.keystore
+!debug.keystore
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.cxx/
+
+# Kotlin
+.kotlin/
+.kotlin-*
+
+# JVM crash dumps
+hs_err_pid*.log
+replay_pid*.log
+*.hprof
+
+# Android
+captures/
+.externalNativeBuild/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 本地回滚包 / 备份（不入库）
+backups/

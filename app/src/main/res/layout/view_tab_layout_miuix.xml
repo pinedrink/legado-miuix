@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Miuix 顶栏版 TabLayout（供 app:miuixTopBar="true" 的页面通过 app:contentLayout 引用）。
+    与 view_tab_layout.xml 的差异仅在文字主题：换成 AppTheme.MiuixBarOverlay。
+    选中/未选中文字色由 TitleBar.applyForegroundColor() 按实际顶栏底色设置，不在此处硬编码。
+    注意：id 必须保持 @+id/tab_layout。
+-->
+<com.google.android.material.tabs.TabLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:theme="@style/AppTheme.MiuixBarOverlay"
+    app:tabBackground="@android:color/transparent"
+    app:tabRippleColor="@android:color/transparent" />

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 悬浮底栏：Miuix 卡片色 + 28dp 全圆角，供 BottomNavigationView 作为 background 使用 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/miuix_item_surface" />
+    <corners android:radius="14dp" />
+</shape>

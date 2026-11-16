@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Miuix 顶栏版搜索行（供 app:miuixTopBar="true" 的页面通过 app:contentLayout 引用）。
+    与 view_search.xml 的差异仅有：文字/光标主题换成 AppTheme.MiuixBarOverlay、
+    胶囊底色换成 bg_searchview_miuix、高度 30dp→36dp、上下边距 10dp→8dp、提示文案走 @string/search。
+    注意：id 必须保持 @+id/search_view，TitleBar.applyForegroundColor() 与各 Activity 都按此 id 查找。
+-->
+<io.legado.app.ui.widget.SearchView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_view"
+    android:theme="@style/AppTheme.MiuixBarOverlay"
+    android:background="@drawable/bg_searchview_miuix"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:imeOptions="actionSearch"
+    android:focusable="false"
+    app:searchIcon="@null"
+    app:queryBackground="@null"
+    app:submitBackground="@null"
+    app:searchHintIcon="@drawable/ic_search_hint"
+    app:iconifiedByDefault="false"
+    app:defaultQueryHint="@string/search" />

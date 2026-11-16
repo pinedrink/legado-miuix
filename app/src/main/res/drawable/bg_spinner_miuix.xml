@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Miuix 风格下拉取值：无下划线，右侧 16dp 小箭头 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_chevron_down"
+        android:gravity="end|center_vertical"
+        android:width="16dp"
+        android:height="16dp"
+        android:right="2dp" />
+</layer-list>
