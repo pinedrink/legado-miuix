@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    Miuix 风格的列表项背景：大圆角卡片 + 卡片色。
+    与 Compose 侧 Card(cornerRadius = CardDefaults.CornerRadius) 的观感保持一致，
+    供仍使用 RecyclerView 的列表页（书源管理、订阅管理等）复用。
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="10dp" />
+    <solid android:color="@color/miuix_card_surface" />
+</shape>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 其它设置内容区改为 Miuix Compose（阶段 D）；标题栏与搜索菜单仍由 ConfigActivity 的 View 体系负责 -->
+<androidx.compose.ui.platform.ComposeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/compose_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />

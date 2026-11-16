@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    关于页（阶段 C 迁移）：界面由 Miuix Compose 绘制，见 io.legado.app.ui.about.AboutScreen。
+    原来的 TitleBar + 头部卡片 + PreferenceFragment 已整体交给 Compose；
+    背景仍由 BaseActivity 负责（壁纸/背景色），ComposeView 保持透明。
+-->
+<androidx.compose.ui.platform.ComposeView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/compose_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Miuix 风格的网格卡片背景。
+  默认态与列表卡片保持一致（16dp 圆角 + miuix_item_surface），
+  focused 态保留原来的 TV 焦点底色，避免影响电视/遥控器操作。
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <solid android:color="@color/btn_bg_press" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="10dp" />
+            <solid android:color="@color/miuix_card_surface" />
+        </shape>
+    </item>
+</selector>

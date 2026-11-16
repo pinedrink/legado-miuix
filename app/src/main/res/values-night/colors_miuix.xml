@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    RecyclerView 列表项的卡片底色（暗色），与 Miuix darkColorScheme 的 surfaceContainer 一致。
+-->
+<resources>
+    <color name="miuix_item_surface">#FF303030</color>
+    <!-- Miuix 顶栏搜索框的填充色（暗色：12% 白） -->
+    <color name="miuix_radio_stroke">#C0FFFFFF</color>
+    <color name="miuix_card_surface">#FF3A3A3A</color>
+    <color name="miuix_card_stroke">#1FFFFFFF</color>
+    <color name="miuix_search_fill">#1FFFFFFF</color>
+    <!-- 下拉菜单文字色（Miuix onSurface） -->
+    <color name="miuix_menu_text">#FFF2F2F2</color>
+</resources>

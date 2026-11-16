@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Miuix 顶栏搜索框（view_search_miuix.xml）的胶囊底色。
+    高度 36dp，radius 取 18dp 即真正的半高胶囊；旧 bg_searchview.xml 的 35dp 依赖 clamp 兜底，不显式。
+    只被 app:miuixTopBar="true" 的页面使用，公共 bg_searchview.xml 不受影响。
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="18dp" />
+    <solid android:color="@color/miuix_search_fill" />
+</shape>

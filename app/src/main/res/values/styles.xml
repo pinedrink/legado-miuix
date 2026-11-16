@@ -1,0 +1,234 @@
+<resources>
+
+    //**************************************************************Theme******************************************************************************//
+
+    <!-- 亮色主题 -->
+    <style name="AppTheme.Light" parent="Base.AppTheme">
+        <item name="actionBarStyle">@style/AppTheme.AppBarOverlay.Light</item>
+    </style>
+
+    <!-- 暗色主题 -->
+    <style name="AppTheme.Dark" parent="Base.AppTheme">
+        <item name="actionBarStyle">@style/AppTheme.AppBarOverlay.Dark</item>
+    </style>
+
+    <!-- 透明主题 -->
+    <style name="AppTheme.Transparent" parent="Base.AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Welcome主题 -->
+    <style name="AppTheme.Welcome" parent="Base.AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Base.AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="actionOverflowMenuStyle">@style/Style.PopupMenu</item>
+        <item name="android:itemTextAppearance">@style/Style.MenuItemText</item>
+        <item name="android:popupMenuStyle">@style/Style.PopupMenu</item>
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+        <item name="colorBackgroundFloating">@color/miuix_item_surface</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <!-- Keep the existing Design bottom-sheet behavior while opting this dialog into edge-to-edge. -->
+    <style name="ThemeOverlay.Legado.BottomWebViewDialog"
+        parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="enableEdgeToEdge">true</item>
+        <item name="paddingBottomSystemWindowInsets">true</item>
+        <item name="paddingLeftSystemWindowInsets">true</item>
+        <item name="paddingRightSystemWindowInsets">true</item>
+        <item name="paddingTopSystemWindowInsets">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay.Light" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/md_grey_900</item>
+            <item name="actionOverflowMenuStyle">@style/Style.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Style.PopupMenu</item>
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+        <item name="android:itemTextAppearance">@style/Style.MenuItemText</item>
+        <item name="colorBackgroundFloating">@color/miuix_item_surface</item>
+</style>
+
+    <style name="AppTheme.AppBarOverlay.Dark" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorAccent">@color/md_grey_50</item>
+            <item name="actionOverflowMenuStyle">@style/Style.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Style.PopupMenu</item>
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+        <item name="android:itemTextAppearance">@style/Style.MenuItemText</item>
+        <item name="colorBackgroundFloating">@color/miuix_item_surface</item>
+</style>
+
+    <!-- Miuix 风格顶栏（app:miuixTopBar="true"）内部文字/输入框使用的主题。
+         view_search_miuix / view_tab_layout_miuix 通过 android:theme 引用。
+         亮色下顶栏是 miuix_item_surface(#FFFFFF)，故用深色文字；values-night 覆盖成 Dark。 -->
+    <style name="AppTheme.MiuixBarOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/md_grey_900</item>
+        <item name="android:textColorPrimary">@color/md_light_primary_text</item>
+        <item name="android:textColorSecondary">@color/md_light_secondary</item>
+        <item name="colorControlNormal">@color/md_light_secondary</item>
+            <item name="actionOverflowMenuStyle">@style/Style.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Style.PopupMenu</item>
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+        <item name="android:itemTextAppearance">@style/Style.MenuItemText</item>
+        <item name="colorBackgroundFloating">@color/miuix_item_surface</item>
+</style>
+
+    <!-- Miuix 风格底栏（MainActivity）的文字样式：12sp 标签，跟随系统字体缩放。 -->
+    <style name="MiuixBottomNavText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Miuix 风格底栏选中指示器（胶囊）。
+         本项目主题是 AppCompat，没有 bottomNavigationStyle，若 XML 不显式指定
+         itemActiveIndicatorStyle，BottomNavigationView 根本不会创建指示器 View，
+         代码里 setItemActiveIndicator* 全部无效。这里给一个真样式让 View 被创建，
+         实际颜色/圆角/高度在 ThemeBottomNavigationVIew 里按主题色覆盖。 -->
+    <style name="MiuixBottomNavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/miuix_item_surface</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="overlapAnchor">false</item>
+        <item name="colorAccent">@color/md_grey_900</item>
+            <item name="actionOverflowMenuStyle">@style/Style.PopupMenu</item>
+        <item name="android:popupMenuStyle">@style/Style.PopupMenu</item>
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+        <item name="android:itemTextAppearance">@style/Style.MenuItemText</item>
+        <item name="colorBackgroundFloating">@color/miuix_item_surface</item>
+</style>
+
+    <style name="Spinner" parent="android:Theme.Holo.Light">
+        <item name="android:spinnerStyle">@style/MiuixSpinnerWidget</item>
+    </style>
+
+    <!-- Miuix 风格 Spinner 控件样式（无下划线、值右对齐、右侧小箭头） -->
+    <style name="MiuixSpinnerWidget" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/bg_spinner_miuix</item>
+        <item name="android:gravity">end|center_vertical</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:paddingEnd">22dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="android:dropDownWidth">200dp</item>
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+        <item name="android:popupElevation">0dp</item>
+    </style>
+
+    //**********System Style******************//
+
+    <style name="Style.NavigationView" parent="android:Widget">
+        <item name="android:listPreferredItemHeightSmall">44dp</item>
+    </style>
+
+    <style name="Style.Toolbar.NoPadding" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
+    <!-- Miuix 风格菜单文字：15sp + onSurface 色 -->
+    <style name="Style.MenuItemText" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/miuix_menu_text</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- 全局下拉菜单（Toolbar 溢出、PopupMenu、ListPopupWindow）统一 Miuix 外观：
+         16dp 圆角 surface 背景、无阴影、菜单项 15sp。 -->
+    <style name="Style.PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:elevation">0dp</item>
+        <item name="overlapAnchor">false</item>
+    </style>
+
+
+    <style name="Activity.Permission" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    //*******************Widget Style**********************************//
+
+    <style name="Style.Shadow.Top" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/shadow_height</item>
+        <item name="android:background">@drawable/bg_shadow_top</item>
+    </style>
+
+    <style name="Style.Shadow.Bottom" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/shadow_height</item>
+        <item name="android:background">@drawable/bg_shadow_bottom</item>
+    </style>
+
+
+    <style name="Style.Line" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <style name="Style.Text.Primary.Normal" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Style.Text.Primary.Normal.Wrap">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="Style.Text.Second.Normal" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:textColor">#676767</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Style.Text.Second.Normal.Wrap">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SleepTimerOption" parent="android:Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginHorizontal">2dp</item>
+        <item name="android:background">@drawable/selector_sleep_timer_option</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingHorizontal">2dp</item>
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Miuix 表单字段的浮动标签 -->
+    <style name="MiuixFormHint">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/secondaryText</item>
+    </style>
+
+</resources>

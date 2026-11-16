@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    RecyclerView 列表项的卡片底色（亮色）。
+    Legado 的 @color/background_card 在亮色下是 #F5F5F5，与页面 #FAFAFA 对比度仅 1.05，
+    视觉上糊成一片；Miuix 的卡片在浅色页面上是纯白，因此这里单独给列表项定义卡片色。
+-->
+<resources>
+    <color name="miuix_item_surface">#FFFFFFFF</color>
+    <!-- Miuix 顶栏搜索框的填充色（亮色：6% 黑），见 bg_searchview_miuix.xml -->
+    <!-- 卡片细描边（亮色） -->
+    <color name="miuix_radio_stroke">#C0000000</color>
+    <color name="miuix_card_surface">#FFFFFFFF</color>
+    <color name="miuix_card_stroke">#14000000</color>
+    <color name="miuix_search_fill">#0F000000</color>
+    <!-- 下拉菜单文字色（Miuix onSurface） -->
+    <color name="miuix_menu_text">#FF1A1A1A</color>
+</resources>

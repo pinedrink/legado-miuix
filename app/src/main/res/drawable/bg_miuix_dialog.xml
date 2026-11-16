@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Miuix 风格对话框底：20dp 全圆角 + 页面底色 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/miuix_item_surface" />
+    <corners android:radius="12dp" />
+</shape>
